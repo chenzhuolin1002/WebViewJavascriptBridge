@@ -75,6 +75,7 @@
 
 - (void)dealloc {
     [self _platformSpecificDealloc];
+	_base.delegate = nil;
     _base = nil;
     _webView = nil;
     _webViewDelegate = nil;
